@@ -1,0 +1,86 @@
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!--BSTGlobal Internal NuGet Packages-->
+    <InternalUtilitiesVersion>1.0.0.*</InternalUtilitiesVersion>
+    <BSTInternalCommonTestingUtilites>1.0.0.*</BSTInternalCommonTestingUtilites>
+    <BSTGlobalAppConfigTransformVersion>1.0.0.*</BSTGlobalAppConfigTransformVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!--BSTGlobal Atlas NuGet Packages-->
+    <BSTGlobalCommonComponentsVersion>2.100.111.*</BSTGlobalCommonComponentsVersion>
+    <BSTGlobalCoreComponentsVersion>2.100.111.*</BSTGlobalCoreComponentsVersion>
+    <BSTGlobalAttachmentRepositoryVersion>2.100.111.*</BSTGlobalAttachmentRepositoryVersion>
+    <BSTGlobalAuditVersion>2.100.111.*</BSTGlobalAuditVersion>
+    <BSTGlobalDeploymentUtilitiesVersion>2.100.111.*</BSTGlobalDeploymentUtilitiesVersion>
+    <BSTGlobalDesignerVersion>2.100.111.*</BSTGlobalDesignerVersion>
+    <BSTGlobalPublishingVersion>2.100.111.*</BSTGlobalPublishingVersion>
+    <BSTGlobalFrameworkVersion>2.100.111.*</BSTGlobalFrameworkVersion>
+    <BSTGlobalIntegrationServiceVersion>2.100.111.*</BSTGlobalIntegrationServiceVersion>
+    <BSTGlobalIntegrationInstancesVersion>2.100.111.*</BSTGlobalIntegrationInstancesVersion>
+    <BSTGlobalNotificationsVersion>2.100.111.*</BSTGlobalNotificationsVersion>
+    <BSTGlobalPackagingVersion>2.100.111.*</BSTGlobalPackagingVersion>
+    <BSTGlobalPubExtensionVersion>2.100.111.*</BSTGlobalPubExtensionVersion>
+    <BSTGlobalReportingVersion>2.100.111.*</BSTGlobalReportingVersion>
+    <BSTGlobalExportVersion>2.100.111.*</BSTGlobalExportVersion>
+    <BSTGlobalTransactionProcessorVersion>2.100.111.*</BSTGlobalTransactionProcessorVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!--BSTGlobal DevToolset NuGet Packages-->
+    <BSTGlobalModelInformationServiceVersion>2.100.111.*</BSTGlobalModelInformationServiceVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!--BSTGlobal Admin Console NuGet Packages-->
+    <BSTGlobalAdminConsoleVersion>2.100.111.*</BSTGlobalAdminConsoleVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!--BSTGlobal Novo NuGet Packages-->
+    <BSTGlobalAutoUpdaterDeploymentPackagerVersion>2.100.111.*</BSTGlobalAutoUpdaterDeploymentPackagerVersion>
+    <BSTGlobalCustomActionsVersion>2.100.111.*</BSTGlobalCustomActionsVersion>
+    <BSTGlobalImportExportFormatsVersion>2.100.111.*</BSTGlobalImportExportFormatsVersion>
+    <BSTGlobalInstallerUtilityVersion>2.100.111.*</BSTGlobalInstallerUtilityVersion>
+    <BSTGlobalProcessingVersion>2.100.111.*</BSTGlobalProcessingVersion>
+    <BSTGlobalRenderingVersion>2.100.111.*</BSTGlobalRenderingVersion>
+    <BSTGlobalExtensionsVersion>2.100.111.*</BSTGlobalExtensionsVersion>
+    <BSTGlobalDocumentGenerationVersion>2.100.111.*</BSTGlobalDocumentGenerationVersion>
+    <BSTGlobalCommonNovoTestingUtilitiesVersion>2.100.111.*</BSTGlobalCommonNovoTestingUtilitiesVersion>
+    <BSTGlobalSmartClientVersion>2.100.111.*</BSTGlobalSmartClientVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!--3rd Party Self Hosted NuGet Packages-->
+    <DlhSoftAllBSTPackagedVersion>1.0.0.1</DlhSoftAllBSTPackagedVersion>
+    <InfragisticsAllBSTPackagedVersion>14.2.20142.2081</InfragisticsAllBSTPackagedVersion>
+    <XceedAllBSTCompiledVersion>5.7.0</XceedAllBSTCompiledVersion>
+    <XceedWpfToolkitBSTPackagedVersion>2.4.14475.10340</XceedWpfToolkitBSTPackagedVersion>
+    <ChartFXAllBSTPackagedVersion>8.1.4247.27013</ChartFXAllBSTPackagedVersion>
+    <ArpianBSTSignedVersion>0.2.0</ArpianBSTSignedVersion>
+    <JamSoftwareShellBrowserBSTPackagedVersion>5.3.0.154</JamSoftwareShellBrowserBSTPackagedVersion>
+    <SystemWindowsInteractivityBSTPackagedVersion>1.0.0.1</SystemWindowsInteractivityBSTPackagedVersion>
+    <MicrosoftExpressionInteractionsBSTPackagedVersion>1.0.0.1</MicrosoftExpressionInteractionsBSTPackagedVersion>
+    <UIAComWrapperBSTPackagedVersion>1.0.0.1</UIAComWrapperBSTPackagedVersion>
+    <MicrosoftReportingServicesAllBSTPackagedVersion>1.0.0.1</MicrosoftReportingServicesAllBSTPackagedVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!--3rd Party NuGet Packages-->
+    <ClosedXmlVersion>0.69.2</ClosedXmlVersion>
+    <FluentAssertionsVersion>4.19.2</FluentAssertionsVersion>
+    <MoqVersion>4.5.8</MoqVersion>
+    <WiXVersion>3.11.0</WiXVersion>
+    <TestStackWhiteVersion>0.13.3</TestStackWhiteVersion>
+    <MicrosoftAspNetSignalRVersion>2.2.3</MicrosoftAspNetSignalRVersion>
+    <CastleCoreVersion>3.3.3</CastleCoreVersion>
+    <NewtonsoftJsonVersion>11.0.1</NewtonsoftJsonVersion>
+    <NGenericsVersion>1.4.1.0</NGenericsVersion>
+    <PDFsharpVersion>1.32.3057.0</PDFsharpVersion>
+    <ProtoBufNetVersion>2.0.0.668</ProtoBufNetVersion>
+    <PowershellVersion>6.3.9600.17400</PowershellVersion>
+  </PropertyGroup>
+  <!-- Until we have better NuGet integration of PostSharp with BSTGlobal.Common, this is the most effective way to include 
+       global PostSharp configuration  in a way that is compatible with our TeamCity sub-component builds. -->
+  <PropertyGroup>
+    <PostSharpDisabledMessages>LA0156;PS0131</PostSharpDisabledMessages>
+    <PostSharpProject>$(MSBuildThisFileDirectory)\PostSharp.config</PostSharpProject>
+  </PropertyGroup>
+  <Target Name="BSTNugetRestore" BeforeTargets="BeforeBuild">
+    <Exec Command="$(MSBuildThisFileDirectory)\Nuget.exe restore $(ProjectPath)" IgnoreExitCode="true" Condition="$(RunInTeamCity)!='True'"/>
+  </Target>
+</Project>
